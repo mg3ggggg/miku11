@@ -20,7 +20,7 @@ handler.before = async (m) => {
 };
 export default handler;
 
-async function simitalk(ask, apikeyyy = "iJ6FxuA9vxlvz5cKQCt3", language = "es") {
+async function simitalk(ask, apikeyyy = "iJ6FxuA9vxlvz5cKQCt3", language = "ar") {
     if (!ask) return { status: false, resultado: { msg: "يجب إدخال نص للتحدث مع ميكو." }};
     try {
         const response1 = await axios.get(`https://delirios-api-delta.vercel.app/tools/simi?text=${encodeURIComponent(ask)}`);
