@@ -19,7 +19,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 *❐↞┇الـوقـت⏳↞ ${(timeout / 1000).toFixed(2)}┇*
 *❐↞┇الـجـائـزة💰↞ ${poin} نقاط┇*
-*★𝓶𝓸𝓼𝓽𝓪𝓯𝓪 𝓶𝓸𝓱𝓪𝓶𝓮𝓭★*
+*★ MIKU BOT ★*
 `.trim()
     conn.tekateki[id] = [
        await conn.reply(m.chat, caption, m),
@@ -33,6 +33,6 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 handler.help = ['acertijo']
 handler.tags = ['game']
-handler.command = /^(سؤال_انمي|سؤال)$/i
+handler.command = /^(سؤال_انمي|سؤالاني)$/i
 
 export default handler
